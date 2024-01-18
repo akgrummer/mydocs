@@ -30,6 +30,13 @@ markdown_extensions:
   - pymdownx.superfences
   # for footnotes
   - footnotes
+  # for tables
+  - tables
+  # Icons and emojis
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_javascript:
   - javascripts/mathjax.js
