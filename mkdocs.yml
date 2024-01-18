@@ -1,0 +1,41 @@
+site_name: Aidan's Docs
+
+theme:
+  name: material
+  palette:
+      scheme: slate
+      primary: black
+      accent: teal
+  font:
+    text: Poppins
+  logo: assets/hgcal.png
+  features:
+      - content.code.copy
+
+markdown_extensions:
+  # LaTex ability
+  - pymdownx.arithmatex:
+      generic: true
+  # code block syntax highlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  # Admonitions (dropdown content)
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # for footnotes
+  - footnotes
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Hide footer for Material for Mkdocs
+# extra:
+#   generator: false
